@@ -1,0 +1,37 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1b1d12" />
+      <stop offset="100%" stop-color="#080805" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259" />
+      <stop offset="50%" stop-color="#ffa751" />
+      <stop offset="100%" stop-color="#c69500" />
+    </linearGradient>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#78909c" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="24" />
+  
+  <g transform="translate(200, 130)">
+    <!-- Metallic Ring -->
+    <circle cx="0" cy="-70" r="24" fill="none" stroke="url(#silver)" stroke-width="7" />
+    <ellipse cx="0" cy="-40" rx="5" ry="10" fill="none" stroke="url(#silver)" stroke-width="5" />
+    <ellipse cx="0" cy="-22" rx="5" ry="10" fill="none" stroke="url(#silver)" stroke-width="5" />
+    
+    <!-- Golden Triforce Ornament -->
+    <g transform="translate(0, 40)" stroke="#5d4037" stroke-width="3" stroke-linejoin="round">
+      <!-- Top Triangle -->
+      <polygon points="0,-60 -45,15 45,15" fill="url(#gold)" />
+      <!-- Left Triangle -->
+      <polygon points="-45,15 -90,90 0,90" fill="url(#gold)" />
+      <!-- Right Triangle -->
+      <polygon points="45,15 0,90 90,90" fill="url(#gold)" />
+      <!-- Inner cutout shows the background, but we make it dark gold for depth -->
+      <polygon points="0,15 -45,90 45,90" fill="#2d2200" stroke="#5d4037" stroke-width="3" />
+    </g>
+  </g>
+</svg>

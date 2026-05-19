@@ -1,0 +1,44 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a2a16" />
+      <stop offset="100%" stop-color="#030d07" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="24" />
+  
+  <g transform="translate(100, 70)">
+    <!-- Yoshi Plush Silhouette Style -->
+    <!-- Tail -->
+    <path d="M 30 190 Q 0 170, 20 140 Q 40 150, 50 180 Z" fill="#4bae4f" />
+    <!-- Shell/Saddle -->
+    <ellipse cx="45" cy="135" rx="18" ry="22" fill="#e53935" stroke="#ffffff" stroke-width="3" />
+    <!-- Body -->
+    <rect x="55" y="110" width="70" height="90" rx="35" fill="#4bae4f" />
+    <path d="M 60 115 C 60 115, 75 185, 120 185" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" />
+    <rect x="65" y="120" width="45" height="65" rx="20" fill="#ffffff" />
+    <!-- Boots -->
+    <rect x="50" y="195" width="35" height="25" rx="10" fill="#ff7043" />
+    <rect x="95" y="195" width="35" height="25" rx="10" fill="#ff7043" />
+    <!-- Head -->
+    <circle cx="110" cy="70" r="45" fill="#4bae4f" />
+    <!-- Snout -->
+    <ellipse cx="140" cy="80" rx="30" ry="25" fill="#4bae4f" />
+    <ellipse cx="140" cy="85" rx="22" ry="18" fill="#ffffff" />
+    <!-- Eyes -->
+    <ellipse cx="105" cy="40" rx="10" ry="18" fill="#ffffff" />
+    <ellipse cx="105" cy="42" rx="5" ry="10" fill="#2196f3" />
+    <ellipse cx="105" cy="40" rx="2" ry="5" fill="#ffffff" />
+    
+    <ellipse cx="123" cy="40" rx="10" ry="18" fill="#ffffff" />
+    <ellipse cx="123" cy="42" rx="5" ry="10" fill="#2196f3" />
+    <ellipse cx="123" cy="40" rx="2" ry="5" fill="#ffffff" />
+    <!-- Spikes on Head -->
+    <path d="M 70 40 Q 55 35, 72 25 Z" fill="#ff7043" />
+    <path d="M 78 28 Q 63 20, 80 13 Z" fill="#ff7043" />
+    <path d="M 88 18 Q 75 8, 90 3 Z" fill="#ff7043" />
+    <!-- Arms -->
+    <path d="M 60 120 Q 30 130, 45 150 Q 70 140, 70 130 Z" fill="#4bae4f" />
+    <path d="M 120 120 Q 150 130, 135 150 Q 110 140, 110 130 Z" fill="#4bae4f" />
+  </g>
+</svg>

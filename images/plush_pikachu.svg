@@ -1,0 +1,45 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#3c310b" />
+      <stop offset="100%" stop-color="#120e03" />
+    </radialGradient>
+    <linearGradient id="pika-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff176" />
+      <stop offset="100%" stop-color="#fbc02d" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="24" />
+  
+  <g transform="translate(100, 70)">
+    <!-- Ears -->
+    <path d="M 40 40 L 0 -20 C -15 -10, 10 20, 50 45 Z" fill="url(#pika-grad)" />
+    <path d="M 0 -20 C -10 -15, -2 0, 12 5 Z" fill="#222222" />
+    
+    <path d="M 160 40 L 200 -20 C 215 -10, 190 20, 150 45 Z" fill="url(#pika-grad)" />
+    <path d="M 200 -20 C 210 -15, 202 0, 188 5 Z" fill="#222222" />
+    
+    <!-- Body -->
+    <rect x="40" y="110" width="120" height="110" rx="55" fill="url(#pika-grad)" />
+    <ellipse cx="70" cy="215" rx="20" ry="12" fill="#f57f17" />
+    <ellipse cx="130" cy="215" rx="20" ry="12" fill="#f57f17" />
+    
+    <!-- Head -->
+    <circle cx="100" cy="85" r="55" fill="url(#pika-grad)" />
+    
+    <!-- Face Details -->
+    <circle cx="70" cy="80" r="7" fill="#222222" />
+    <circle cx="72" cy="77" r="2.5" fill="#ffffff" />
+    <circle cx="130" cy="80" r="7" fill="#222222" />
+    <circle cx="128" cy="77" r="2.5" fill="#ffffff" />
+    
+    <circle cx="50" cy="100" r="9" fill="#e53935" />
+    <circle cx="150" cy="100" r="9" fill="#e53935" />
+    
+    <path d="M 96 90 Q 100 93, 104 90" stroke="#222222" stroke-width="2" fill="none" />
+    
+    <!-- Arms -->
+    <ellipse cx="60" cy="135" rx="12" ry="20" fill="url(#pika-grad)" transform="rotate(30, 60, 135)" />
+    <ellipse cx="140" cy="135" rx="12" ry="20" fill="url(#pika-grad)" transform="rotate(-30, 140, 135)" />
+  </g>
+</svg>

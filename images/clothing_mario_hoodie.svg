@@ -1,0 +1,38 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#3c0b0f" />
+      <stop offset="100%" stop-color="#120406" />
+    </radialGradient>
+    <linearGradient id="hoodie-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2e3b" />
+      <stop offset="100%" stop-color="#b3000b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="24" />
+  
+  <!-- Hoodie Shape -->
+  <g filter="url(#shadow)" transform="translate(100, 80)">
+    <!-- Sleeves -->
+    <path d="M 0 40 L -60 120 L -30 140 L 10 70 Z" fill="#990008" />
+    <path d="M 200 40 L 260 120 L 230 140 L 190 70 Z" fill="#990008" />
+    <!-- Body -->
+    <path d="M 20 40 L 180 40 L 190 200 L 10 200 Z" fill="url(#hoodie-grad)" />
+    <!-- Hood -->
+    <path d="M 40 40 C 40 -10, 160 -10, 160 40 Z" fill="#e60012" />
+    <path d="M 60 40 C 60 10, 140 10, 140 40 Z" fill="#730005" />
+    <!-- Drawstrings -->
+    <line x1="85" y1="40" x2="85" y2="100" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <circle cx="85" cy="100" r="5" fill="#e60012" />
+    <line x1="115" y1="40" x2="115" y2="110" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <circle cx="115" cy="110" r="5" fill="#e60012" />
+    <!-- Pocket -->
+    <path d="M 40 140 L 160 140 L 150 190 L 50 190 Z" fill="#d1000f" stroke="#730005" stroke-width="2" />
+    <!-- Logo Badge -->
+    <circle cx="100" cy="90" r="22" fill="#ffffff" stroke="#e60012" stroke-width="2" />
+    <text x="100" y="98" font-family="'Arial Black', sans-serif" font-size="26" font-weight="bold" fill="#e60012" text-anchor="middle">M</text>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#3c2f0b" />
+      <stop offset="100%" stop-color="#120e03" />
+    </radialGradient>
+    <linearGradient id="cube-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffee58" />
+      <stop offset="100%" stop-color="#f57f17" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffee58" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#f57f17" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blur-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="24" />
+  
+  <!-- Glow effect background -->
+  <circle cx="200" cy="190" r="140" fill="url(#glow)" />
+  
+  <!-- Question Block Cube Shape (2.5D Isometric Feel) -->
+  <g transform="translate(125, 110)" filter="url(#blur-glow)">
+    <!-- Front Face -->
+    <rect x="0" y="10" width="150" height="150" rx="12" fill="url(#cube-grad)" stroke="#5d4037" stroke-width="4" />
+    <!-- Rivets in 4 corners -->
+    <circle cx="15" cy="25" r="5" fill="#afb42b" stroke="#5d4037" stroke-width="2" />
+    <circle cx="135" cy="25" r="5" fill="#afb42b" stroke="#5d4037" stroke-width="2" />
+    <circle cx="15" cy="145" r="5" fill="#afb42b" stroke="#5d4037" stroke-width="2" />
+    <circle cx="135" cy="145" r="5" fill="#afb42b" stroke="#5d4037" stroke-width="2" />
+    
+    <!-- Question Mark -->
+    <g fill="#ffffff" stroke="#5d4037" stroke-width="5" stroke-linejoin="round" transform="translate(35, 25)">
+      <path d="M 15 35 
+               C 15 10, 65 10, 65 35 
+               C 65 55, 40 55, 40 75 
+               L 40 85" fill="none" stroke-linecap="round" stroke-width="12" />
+      <!-- Question Dot -->
+      <circle cx="40" cy="108" r="7.5" fill="#ffffff" stroke="#5d4037" stroke-width="3" />
+    </g>
+  </g>
+  <!-- Light Stand/Pedestal -->
+  <rect x="180" y="270" width="40" height="15" fill="#424242" rx="4" />
+  <rect x="150" y="282" width="100" height="10" fill="#212121" rx="3" />
+</svg>

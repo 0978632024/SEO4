@@ -1,0 +1,63 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#3c0b0f" />
+      <stop offset="100%" stop-color="#120406" />
+    </radialGradient>
+    <linearGradient id="pipe-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4caf50" />
+      <stop offset="50%" stop-color="#81c784" />
+      <stop offset="100%" stop-color="#1b5e20" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="24" />
+  
+  <!-- Warp Pipe Pedestal -->
+  <g transform="translate(130, 270)">
+    <!-- Main Pipe Body -->
+    <rect x="15" y="20" width="110" height="50" fill="url(#pipe-grad)" stroke="#1b5e20" stroke-width="3" />
+    <!-- Pipe Rim -->
+    <rect x="5" y="0" width="130" height="22" rx="4" fill="url(#pipe-grad)" stroke="#1b5e20" stroke-width="3" />
+    <!-- Shadow under rim -->
+    <rect x="15" y="22" width="110" height="8" fill="#000000" opacity="0.3" />
+  </g>
+  
+  <!-- Jumping Mario Figure -->
+  <g transform="translate(140, 70)">
+    <!-- Right Arm (Raised Fist) -->
+    <path d="M 85 70 Q 110 20, 115 15" stroke="#ff2e3b" stroke-width="18" stroke-linecap="round" fill="none" />
+    <circle cx="118" cy="12" r="13" fill="#ffffff" stroke="#9e9e9e" stroke-width="2" />
+    
+    <!-- Left Arm -->
+    <path d="M 35 85 Q 10 95, 0 100" stroke="#ff2e3b" stroke-width="16" stroke-linecap="round" fill="none" />
+    <circle cx="-2" cy="102" r="11" fill="#ffffff" stroke="#9e9e9e" stroke-width="2" />
+    
+    <!-- Legs (Jumping Pose) -->
+    <rect x="35" y="140" width="20" height="30" rx="5" fill="#0d47a1" transform="rotate(30, 35, 140)" />
+    <rect x="65" y="140" width="20" height="35" rx="5" fill="#0d47a1" transform="rotate(-45, 65, 140)" />
+    <!-- Brown Shoes -->
+    <rect x="18" y="155" width="28" height="18" rx="8" fill="#5d4037" transform="rotate(30, 18, 155)" />
+    <rect x="78" y="155" width="28" height="18" rx="8" fill="#5d4037" transform="rotate(-30, 78, 155)" />
+    
+    <!-- Body (Overalls) -->
+    <rect x="35" y="80" width="50" height="70" rx="20" fill="#0d47a1" />
+    <!-- Red Shirt Sleeves Underneath -->
+    <rect x="42" y="80" width="36" height="35" fill="#ff2e3b" />
+    <!-- Yellow Buttons -->
+    <circle cx="47" cy="115" r="4.5" fill="#ffd54f" />
+    <circle cx="73" cy="115" r="4.5" fill="#ffd54f" />
+    
+    <!-- Head -->
+    <circle cx="60" cy="55" r="24" fill="#ffb74d" />
+    <!-- Nose -->
+    <circle cx="78" cy="55" r="10" fill="#ffb74d" />
+    <!-- Mustache -->
+    <path d="M 60 62 Q 75 62, 85 64 Q 72 74, 60 65 Z" fill="#3e2723" />
+    <!-- Cap -->
+    <path d="M 33 45 C 33 20, 87 20, 87 45 Z" fill="#ff2e3b" />
+    <path d="M 30 45 C 40 45, 80 45, 95 38" stroke="#ff2e3b" stroke-width="6" stroke-linecap="round" />
+    <!-- Emblem -->
+    <circle cx="60" cy="35" r="10" fill="#ffffff" />
+    <text x="60" y="39" font-family="Arial" font-size="12" font-weight="bold" fill="#ff2e3b" text-anchor="middle">M</text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳情 | NINTENDO FAN STORE 任天堂粉絲周邊商城</title>
+  <meta name="description" content="查看任天堂主題周邊商品的詳細資訊，包含規格、高清大圖、玩家評分與詳細評論。">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Navigation Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+      <!-- Breadcrumbs Navigation -->
+      <div class="container" style="margin-top: 30px;">
+        <nav class="breadcrumb">
+          <a href="index.html">首頁</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="clothing.html" id="breadcrumb-category">商品分類</a>
+          <span class="breadcrumb-separator">/</span>
+          <span id="breadcrumb-current">商品名稱</span>
+        </nav>
+      </div>
+
+      <!-- Dynamic Product Detail Container -->
+      <section class="container" id="product-detail-container" style="padding-bottom: 80px;">
+        <!-- Dynamically rendered by js/products.js:renderProductDetail() -->
+        <div style="text-align: center; padding: 100px 0;">
+          <p style="color: var(--text-secondary);">正在載入任天堂商品詳情，請稍後...</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+  </div>
+
+  <script src="js/products.js"></script>
+</body>
+</html>

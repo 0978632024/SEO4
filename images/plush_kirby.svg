@@ -1,0 +1,45 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#3c0b29" />
+      <stop offset="100%" stop-color="#12030c" />
+    </radialGradient>
+    <linearGradient id="body-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9ebb" />
+      <stop offset="100%" stop-color="#ff4081" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="24" />
+  
+  <g transform="translate(100, 100)">
+    <!-- Kirby Feet -->
+    <ellipse cx="25" cy="175" rx="35" ry="22" fill="#d500f9" transform="rotate(-15, 25, 175)" />
+    <ellipse cx="175" cy="175" rx="35" ry="22" fill="#d500f9" transform="rotate(15, 175, 175)" />
+    
+    <!-- Kirby Body -->
+    <circle cx="100" cy="100" r="90" fill="url(#body-grad)" />
+    
+    <!-- Kirby Arms -->
+    <ellipse cx="15" cy="100" rx="25" ry="18" fill="#ff4081" transform="rotate(-30, 15, 100)" />
+    <ellipse cx="185" cy="100" rx="25" ry="18" fill="#ff4081" transform="rotate(30, 185, 100)" />
+    
+    <!-- Eyes -->
+    <ellipse cx="80" cy="75" rx="7" ry="18" fill="#0d47a1" />
+    <ellipse cx="80" cy="68" rx="4" ry="10" fill="#ffffff" />
+    <ellipse cx="80" cy="80" rx="7" ry="7" fill="#29b6f6" />
+    <ellipse cx="80" cy="75" rx="7" ry="18" fill="none" stroke="#000000" stroke-width="1.5" />
+    
+    <ellipse cx="120" cy="75" rx="7" ry="18" fill="#0d47a1" />
+    <ellipse cx="120" cy="68" rx="4" ry="10" fill="#ffffff" />
+    <ellipse cx="120" cy="80" rx="7" ry="7" fill="#29b6f6" />
+    <ellipse cx="120" cy="75" rx="7" ry="18" fill="none" stroke="#000000" stroke-width="1.5" />
+    
+    <!-- Cheeks -->
+    <ellipse cx="62" cy="103" rx="10" ry="6" fill="#ff2a7f" opacity="0.8" />
+    <ellipse cx="138" cy="103" rx="10" ry="6" fill="#ff2a7f" opacity="0.8" />
+    
+    <!-- Mouth -->
+    <path d="M 94 100 Q 100 112, 106 100 Q 100 102, 94 100 Z" fill="#880e4f" />
+    <path d="M 96 103 Q 100 110, 104 103" stroke="#ff80ab" stroke-width="2.5" fill="none" />
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們 | NINTENDO FAN STORE 任天堂粉絲周邊商城</title>
+  <meta name="description" content="有任何關於任天堂周邊、訂單出貨或退換貨問題？歡迎隨時填表或透過客服信箱與我們聯繫，我們將於服務時間內儘速為您服務。">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Navigation Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="category-banner">
+        <div class="container">
+          <h1>聯絡我們</h1>
+          <p>不論是商品諮詢、大宗訂購或是合作提案，歡迎與我們取得聯繫。</p>
+        </div>
+      </section>
+
+      <section class="container" style="padding-bottom: 80px;">
+        <div class="contact-layout">
+          <!-- Contact Info Details -->
+          <div class="contact-info-panel">
+            <div class="contact-card">
+              <h3>客服諮詢</h3>
+              <p>我們隨時準備為您解答任何購買上的疑慮或售後退換服務需求。</p>
+              <p style="margin-top: 15px;"><strong>服務時間：</strong>週一至週五 09:00 - 18:00 (國定例假日休息)</p>
+              <p><strong>客服信箱：</strong>support@nintendofanstore.com</p>
+              <p><strong>客服專線：</strong>02-2345-6789</p>
+            </div>
+
+            <div class="contact-card">
+              <h3>概念實體門市</h3>
+              <p>歡迎親臨我們的概念店鋪，現場觸摸玩偶手感並挑選各式熱門周邊商品！</p>
+              <p style="margin-top: 15px;"><strong>地址：</strong>台北市信義區忠孝東路五段 100 號</p>
+              <p><strong>營業時間：</strong>週一至週日 11:00 - 22:00 (與信義商圈同步)</p>
+            </div>
+          </div>
+
+          <!-- Contact Feedback Form -->
+          <div class="contact-form">
+            <h2 style="font-family: var(--font-mono); font-size: 1.6rem; margin-bottom: 24px; position: relative; padding-bottom: 8px; border-bottom: 1px solid var(--border-color);">發送訊息</h2>
+            <form id="contact-feedback-form" onsubmit="event.preventDefault(); alert('感謝您的發言！您的意見已成功送出，客服小精靈將於 24 小時內與您聯繫。'); this.reset();">
+              <div class="form-group">
+                <label for="name">玩家姓名 / 暱稱</label>
+                <input type="text" id="name" class="form-control" placeholder="請輸入您的姓名或暱稱" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">電子信箱</label>
+                <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">主旨主題</label>
+                <input type="text" id="subject" class="form-control" placeholder="請填寫詢問主旨" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">詢問內容 / 意見回饋</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="請填寫您想對我們說的話..." required></textarea>
+              </div>
+
+              <button type="submit" class="primary-btn" style="width: 100%; justify-content: center; margin-top: 10px;">
+                送出訊息
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+  </div>
+
+  <script src="js/products.js"></script>
+</body>
+</html>
